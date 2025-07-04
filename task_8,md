@@ -1,0 +1,29 @@
+
+- CREATE PROCEDURE
+- CREATE FUNCTION
+- Parameters & Conditional Logic
+
+| Column     | Type          |
+|------------|---------------|
+| emp_id     | INT (Primary) |
+| name       | VARCHAR(50)   |
+| salary     | DECIMAL       |
+| department | VARCHAR(50)   |
+
+ Takes empId and newSalary
+ Updates salary new is greater than current
+Else shows message: New salary must be higher
+
+Takes salary as input
+Returns:
+20% if salary > 50000
+10% otherwise
+
+CALL UpdateSalary(2, 48000);
+ Salary updated
+
+CALL UpdateSalary(4, 25000);
+ New salary must be higher
+
+SELECT GetBonus(60000);  12000
+SELECT GetBonus(40000);  4000
